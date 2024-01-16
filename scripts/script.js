@@ -5,6 +5,12 @@ $(function () {
     $('.burger').toggleClass('_active');
   });
 
+  $('.mobile_menu>.manu_link').click(function () {
+    $('.mobile_menu').toggleClass('_active');
+    $('body').toggleClass('_lock');
+    $('.burger').toggleClass('_active');
+  });
+
   setInterval(() => {
     $('._app').toggleClass('_active');
   }, 4000);
@@ -22,6 +28,12 @@ $(function () {
         breakpoint: 1200,
         settings: {
           slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1
         }
       }
     ]
