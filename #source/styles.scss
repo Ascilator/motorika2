@@ -289,10 +289,13 @@ main {
     }
     .logos {
       margin-top: 40px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
       img {
         max-width: 180px;
         @media screen and (max-width: 600px) {
-          max-width: 100px;
+          max-width: 40px;
         }
       }
       @media screen and (max-width: 600px) {
@@ -564,6 +567,26 @@ main {
     overflow: visible;
   }
   .slider_item {
+    &._1 {
+      .after_text {
+        transform: translate(-10%, -30px);
+
+        @media screen and (max-width: 1000px) {
+          transform: none;
+        }
+      }
+    }
+    &._2 {
+      .after_text {
+        transform: translate(-20%, -20px);
+        @media screen and (max-width: 1000px) {
+          transform: none;
+        }
+        @media screen and (max-width: 700px) {
+          margin-top: -100px;
+        }
+      }
+    }
     .ill {
       width: 60%;
       margin: 0 auto;
@@ -609,6 +632,9 @@ main {
         transform: translate(0);
         margin-top: 20px;
       }
+
+      @media screen and (max-width: 700px) {
+      }
       @media screen and (max-width: 600px) {
         font-size: 20px;
         line-height: 1.4;
@@ -617,11 +643,15 @@ main {
     }
 
     .main_pic {
-      width: 100%;
-      margin: -350px 0 0;
+      width: 120%;
+      margin: -200px 0 0;
       position: relative;
       z-index: 2;
       transform: translate(-100px, 0);
+      &._1 {
+        width: 120%;
+        margin: -280px 0 0;
+      }
       &._2 {
         transform: translate(0px, 0);
       }
@@ -631,9 +661,9 @@ main {
       @media screen and (max-width: 700px) {
         display: block;
         margin: -80px 0 0;
-        transform: translate(0%, 0) scale(1.4);
+        transform: translate(-11%, 10%) scale(1.4);
         &._2 {
-          transform: translate(20%, 0) scale(1.4);
+          transform: translate(3%, -40%) scale(1.4);
           position: relative;
         }
       }
