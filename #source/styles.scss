@@ -426,7 +426,7 @@ main {
     transform: translate(0, -50%);
     width: 100%;
 
-    @media screen and (max-width: 1300px) {
+    @media screen and (max-width: 1500px) {
       bottom: 0%;
       top: unset;
       right: 0;
@@ -442,7 +442,7 @@ main {
     padding-bottom: 500px;
   }
   @media screen and (max-width: 600px) {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 
@@ -623,7 +623,7 @@ main {
       z-index: 2;
       transform: translate(-100px, 0);
       &._2 {
-        transform: translate(-50px, 0);
+        transform: translate(0px, 0);
       }
       @media screen and (max-width: 1000px) {
         display: none;

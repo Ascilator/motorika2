@@ -470,7 +470,7 @@ main {
   transform: translate(0, -50%);
   width: 100%;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1500px) {
   .about_us .back_img {
     bottom: 0%;
     top: unset;
@@ -491,7 +491,7 @@ main {
 }
 @media screen and (max-width: 600px) {
   .about_us {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 
@@ -690,7 +690,7 @@ main {
   transform: translate(-100px, 0);
 }
 .our_coaches .slider_item .main_pic._2 {
-  transform: translate(-50px, 0);
+  transform: translate(0px, 0);
 }
 @media screen and (max-width: 1000px) {
   .our_coaches .slider_item .main_pic {
