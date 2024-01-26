@@ -729,10 +729,10 @@ main {
   .our_coaches .slider_item .main_pic {
     display: block;
     margin: -80px 0 0;
-    transform: translate(-11%, 10%) scale(1.4);
+    transform: translate(-11%, 10%) scale(1.2);
   }
   .our_coaches .slider_item .main_pic._2 {
-    transform: translate(3%, -40%) scale(1.4);
+    transform: translate(-5%, -40%) scale(1.2);
     position: relative;
   }
 }
