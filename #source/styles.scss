@@ -309,7 +309,7 @@ main {
   @media screen and (max-width: 800px) {
   }
   @media screen and (max-width: 600px) {
-    padding-bottom: 200px;
+    padding-bottom: 270px;
   }
 }
 
@@ -700,6 +700,21 @@ main {
   background-repeat: no-repeat;
   background-position: 50% 100%;
   padding-bottom: 50px;
+  position: relative;
+  .img_back {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    object-fit: contain;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+    @media screen and (max-width: 600px) {
+      display: block;
+    }
+  }
   .block_title {
     margin-bottom: 120px;
     @media screen and (max-width: 600px) {
@@ -707,6 +722,8 @@ main {
     }
   }
   .wrapper {
+    position: relative;
+    z-index: 2;
   }
   .content_box {
     display: flex;
@@ -732,7 +749,7 @@ main {
   }
   @media screen and (max-width: 600px) {
     padding-bottom: 20px;
-    background: url('../img/fifth_screen_mobile.jpg');
+    background: none;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% -50%;

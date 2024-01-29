@@ -344,7 +344,7 @@ main {
 }
 @media screen and (max-width: 600px) {
   .first_screen {
-    padding-bottom: 200px;
+    padding-bottom: 270px;
   }
 }
 
@@ -772,6 +772,24 @@ main {
   background-repeat: no-repeat;
   background-position: 50% 100%;
   padding-bottom: 50px;
+  position: relative;
+}
+.our_brands .img_back {
+  display: none;
+  position: absolute;
+  top: 5%;
+  left: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+.our_brands .img_back img {
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .our_brands .img_back {
+    display: block;
+  }
 }
 .our_brands .block_title {
   margin-bottom: 120px;
@@ -780,6 +798,10 @@ main {
   .our_brands .block_title {
     margin-bottom: 100px;
   }
+}
+.our_brands .wrapper {
+  position: relative;
+  z-index: 2;
 }
 .our_brands .content_box {
   display: flex;
@@ -811,7 +833,7 @@ main {
 @media screen and (max-width: 600px) {
   .our_brands {
     padding-bottom: 20px;
-    background: url("../img/fifth_screen_mobile.jpg");
+    background: none;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% -50%;
