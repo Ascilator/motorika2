@@ -681,6 +681,9 @@ main {
     line-height: 1.4;
   }
 }
+.our_coaches .slider_item .img_cont {
+  position: relative;
+}
 .our_coaches .slider_item .after_text {
   font-size: 30px;
   line-height: 36px;
@@ -716,6 +719,15 @@ main {
 .our_coaches .slider_item .main_pic._1 {
   width: 120%;
   margin: -280px 0 0;
+}
+@media screen and (max-width: 700px) {
+  .our_coaches .slider_item .main_pic._1 {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    margin: 0;
+    width: 120%;
+  }
 }
 .our_coaches .slider_item .main_pic._2 {
   transform: translate(0px, 0);
@@ -786,7 +798,7 @@ main {
 .our_brands .img_back img {
   width: 100%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 380px) {
   .our_brands .img_back {
     display: block;
   }

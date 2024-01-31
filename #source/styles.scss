@@ -616,6 +616,10 @@ main {
       }
     }
 
+    .img_cont {
+      position: relative;
+    }
+
     .after_text {
       font-size: 30px;
       line-height: 36px;
@@ -651,6 +655,13 @@ main {
       &._1 {
         width: 120%;
         margin: -280px 0 0;
+        @media screen and (max-width: 700px) {
+          position: absolute;
+          top: 80px;
+          left: 0;
+          margin: 0;
+          width: 120%;
+        }
       }
       &._2 {
         transform: translate(0px, 0);
@@ -711,7 +722,7 @@ main {
     img {
       width: 100%;
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 380px) {
       display: block;
     }
   }
